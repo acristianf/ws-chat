@@ -11,5 +11,19 @@ you join chatrooms and chat.
 
 ## What do we need for it?
 
-1. A server(chatrooms)
-2. A client that can join an leave servers
+1. A server(chatrooms) - not done yet
+2. A client that can join and leave servers - Maybe done?
+
+## Basic usage
+
+``` 
+mvn clean package 
+```
+To initialize a server use(8082 only port supported):
+```
+java -jar /target/ws-chat-1.0-SNAPSHOT.jar server
+```
+To start a client use:
+```
+java -jar /target/ws-chat-1.0-SNAPSHOT.jar client hostname port
+```
